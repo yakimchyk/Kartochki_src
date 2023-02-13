@@ -1,0 +1,210 @@
+@import "fonts";
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+._active {
+   background-color: #D91667 !important;
+   &:hover {
+      background-color: #ff6ca9 !important;
+   }
+}
+._denied {
+
+}
+
+.product {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-image: url(../img/Pattern.jpg);
+   // .product__body
+   &__body {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      width: 1130px;
+      padding: 80px 0px 40px 0px;
+      @media (max-width: 768px) {
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         padding: 28px 0px;
+      }
+      @media (max-width: 425px) {
+         padding: 18px 0px;
+      }
+   }
+   // .product__question
+   &__question {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 16px;
+      text-align: center;
+      font-family: 'Exo 2';
+      font-size: 36px;
+      color: #FFFFFF;
+      text-shadow: 0px 1px 1px #000000;
+      @media (max-width: 768px) {
+         font-size: 32px;
+      }
+      @media (max-width: 425px) {
+         font-size: 24px;
+      }
+   }
+   // .product__itemcont
+   &__itemcont {
+      position: relative;
+      flex: 0 1 320px;
+      height: 480px;
+      border-radius: 12px;
+      background-color: #1698D9;
+      clip-path: polygon(0 46px, 46px 0, 100% 0, 100% 110%, 0 110%);
+      margin: 0 5px;
+      transition: all ease 0.2s;
+      &:hover {
+         background-color: #8fdaff;
+      }
+      &:focus {
+         background-color: #000000;
+      }
+      @media (max-width: 768px) {
+         flex: 0 1 45%;
+         margin-top: 44px;
+         height: 450px;
+      }
+      @media (max-width: 425px) {
+         flex: 0 1 320px;
+         margin: 44px 20px 0px;
+      }
+      @media (min-width: 769px) {
+         &:nth-child(2) {
+            margin-left: 10px;
+         }
+         &:last-child {
+            margin-right: 10px;
+         }
+      }
+   }
+   // .product__item
+   &__item {
+      position: relative;
+      max-width: calc(100% - 8px);
+      height: calc(100% - 8px);
+      top: 4px;
+      left: 4px;
+      border-radius: 10px;
+      background-color: #F2F2F2;
+      clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 110%, 0 110%);
+   }
+   // .product__textcont
+   &__textcont {
+      width: fit-content;
+      margin: 0 auto;
+      @media (max-width: 768px) {
+         padding: 0px 0px 0px 4px;
+      }
+   }
+   // .product__title
+   &__title {
+      position: absolute;
+      font-family: 'Trebuchet MS';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      color: #666666;
+      padding: 23px 0px 0px 0px;
+      @media (max-width: 767px) {
+         text-align: center;
+      }
+   }
+   // .product__name
+   &__name {
+      font-family: 'Trebuchet MS';
+      font-weight: 700;
+      font-size: 48px;
+      color: #000000;
+      padding: 43px 0px 0px 0px;
+      @media (max-width: 768px) {
+         font-size: 40px;
+      }
+   }
+   // .product__flawor
+   &__flawor {
+      font-family: 'Trebuchet MS';
+      font-weight: 700;
+      font-size: 24px;
+      color: #000000;
+   }
+   // .product__text
+   &__text {
+      font-family: 'Trebuchet MS';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: #666666;
+      padding: 15px 0px 0px 0px;
+      @media (max-width: 768px) {
+         padding: 8px 0px 0px 0px;
+      }
+   }
+   // .product__img
+   &__img {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      z-index: -2;
+   }
+   // .product__weight
+   &__weight {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      padding: 8px 0px;
+      text-align: center;
+      width: 80px;
+      height: 80px;
+      background-color: #2EA8E6;
+      border-radius: 50%;
+      font-family: 'Trebuchet MS';
+      font-weight: 400;
+      font-size: 42px;
+      color: #FFFFFF;
+      span {
+         font-size: 21px;
+         position: absolute;
+         bottom: 6px;
+         left: 32px;
+      }
+   }
+   // .product__desc
+   &__desc {
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      right: 0;
+      height: 14px;
+      text-align: center;
+      font-family: 'Trebuchet MS';
+      font-size: 13px;
+      color: #ffffff;
+      pointer-events: none;
+      a {
+         cursor: pointer;
+         color: #22A7E9;
+         text-decoration-line: underline;
+         text-decoration-style: dashed;
+         pointer-events: all;
+      }
+      @media (max-width: 768px) {
+         
+      }
+   }
+}
