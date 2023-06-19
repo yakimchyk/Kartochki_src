@@ -36,18 +36,3 @@ iconMenu.forEach(iconMenu => {
          }
       });
    });
-
-
-/* iconMenu.addEventListener("mouseover", function (q) {
-   iconMenu.querySelector('.product__title').innerHTML = 'NO.';
-});
-iconMenu.addEventListener("mouseout", function (q) {
-   iconMenu.querySelector('.product__title').innerHTML = originalTitleHTML;
-}); */
-
-
-/*
-import Swiper, { Navigation, Pagination } from 'swiper';
-const swiper = new Swiper();
-*/
-
